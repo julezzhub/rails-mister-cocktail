@@ -1,2 +1,10 @@
 // Import page-specific CSS files here.
 @import "home";
+
+#new-drink-button {
+  display: block;
+
+  &:hover {
+    color: #181825;
+  }
+}

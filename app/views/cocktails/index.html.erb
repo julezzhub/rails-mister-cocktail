@@ -1,0 +1,9 @@
+<h1>The Cock and Tail</h1>
+<h4>Choose from one of our award-winning drinks:</h4>
+<ul>
+<% @cocktails.each do |cocktail| %>
+<li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+<% end %>
+</ul>
+
+<%= link_to "Add a new cocktail", new_cocktail_path, class:"btn btn-success", id:"new-drink-button"%>

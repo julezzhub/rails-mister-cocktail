@@ -11,3 +11,28 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import "navbar";
+
+$primary_color: #181825;
+$text_color: #C299FC;
+
+body {
+  background-color: $primary_color;
+}
+
+h1, h2, h3, h4, p, span, label {
+  color: $text_color;
+  font-weight: light;
+}
+
+li {
+  list-style: none;
+  font-weight: lighter;
+  color: $text_color;
+}
+
+a:hover {
+    color: #6cabf7;
+    text-decoration: none;
+}

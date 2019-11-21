@@ -11,7 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav> <%= link_to cocktails_path do %><span>COCK</span>
+      <%= image_tag "cock.jpg", alt:"cock", id: "nav-logo"%>
+      <span>TAIL</span>
+      <% end %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
